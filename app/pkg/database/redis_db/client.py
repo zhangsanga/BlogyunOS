@@ -29,13 +29,13 @@ class RedisTool(object):
     def get_conf(self):
         # try:
             conf = None
-            conf = dict(config_file.items('redis_connection'))
+            # conf = dict(config_file.items('redis_connection'))
             print('xxx',config_file.items('redis_connection'))
-            self._host = conf['host']
-            self._port = int(conf['port'])
-            self._pwd = conf['pwd']
-            self._db = int(conf.get('db', 0))
-            self._conn = int(conf.get('conn', 5))
+            # self._host = conf['host']
+            # self._port = int(conf['port'])
+            # self._pwd = conf['pwd']
+            # self._db = int(conf.get('db', 0))
+            # self._conn = int(conf.get('conn', 5))
         # except BaseException:
         #     raise Exception('get redis config failed! redis config: %s' % conf)
 
